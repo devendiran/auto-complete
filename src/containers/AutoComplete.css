@@ -1,0 +1,11 @@
+.auto-complete {
+    width: 500px;
+    margin: 40px auto;
+    height: 500px;
+    padding: 10px;
+
+}
+
+ .auto-complete .input {
+    width: 100%;
+}
