@@ -5,6 +5,7 @@ import  Input from '../components/Input';
 import { searchUser } from '../store';
 
 import './AutoComplete.css';
+import UserDetailList from '../components/UserDetailList';
 
 export default function AutoComplete(props) {
     const {state, dispatch} = useContext(appContext);
@@ -19,10 +20,11 @@ export default function AutoComplete(props) {
     useEffect(() => {
         inputRef.current.focus();
     }, []);
-    
+
     return (
         <div className="auto-complete">
             <Input ref={inputRef} value={state.searchText} placeholder="Search Users" onChange={onSearchTextChangedHandler}></Input>
+            {state.searchText && <UserDetailList users={state.users}></UserDetailList>}
         </div>
     );
 }

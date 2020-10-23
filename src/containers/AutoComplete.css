@@ -3,7 +3,7 @@
     margin: 40px auto;
     height: 500px;
     padding: 10px;
-
+    position: relative;
 }
 
  .auto-complete .input {

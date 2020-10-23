@@ -1,0 +1,10 @@
+.user-detail .title, .user-detail .name, .user-detail .address {
+    margin: 2px;
+}
+
+.user-detail {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ded5d5;
+    box-sizing: border-box;
+}
